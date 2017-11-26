@@ -5,68 +5,66 @@
         <title>I Can Code | Sign Up</title>
         <style type="text/css">
             /* Reset Styles */
-            body, #bodyEmail{height:100% !important; margin:0; padding:0; width:100% !important;}
-			table{border-collapse:collapse;}
-			img, a img{border:0; outline:none; text-decoration:none;}
-			h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
-			p{margin: 1em 0;}
+            body, #bodyEmail{height:100% !important;margin:0;padding:0;width:100% !important;}
+            table{border-collapse:collapse;}
+            img, a img{border:0;outline:none;text-decoration:none;}
+            h1, h2, h3, h4, h5, h6{margin:0;padding:0;}
+            p{margin:1em 0;}
             
             /* Client-Specific Styles */
             .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
-			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
-			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%;} /* Force Hotmail/Outlook.com to display line heights normally. */
+            table, td{mso-table-lspace:0pt;mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up. */
 			#outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
 			img{-ms-interpolation-mode: bicubic;} /* Force IE to smoothly render resized images. */
 			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
             
             /* General Styles */
             h1, h2, h3{font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
-			h1, h1 a{color:#6ecde2; font-size:20px; font-weight:600; line-height:110%; text-align:center; padding-bottom:10px;}
-			h2, h2, h3, h3 a{color:#6ecde2; font-size:17px; font-weight:400; line-height:110%; text-align:center; padding-top: 10px; padding-bottom:10px;}
+            h1, h1 a{color:#6ecde2;font-size:20px;font-weight:600;line-height:110%;text-align:center;padding-bottom:10px;}
+            h2, h2, h3, h3 a{color:#6ecde2;font-size:17px;font-weight:400;line-height:110%;text-align:center;padding-top:10px;padding-bottom:10px;}
             
-            #intro, .col1, .col2, .col3, .footerContent, .callToActionButtonContent{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; color:#979797;line-height:125%;}
-            .footerContent {font-size:12px;}
-            .col1, .col2, .col3{padding-left: 10px; padding-right: 10px;}
-			
-			body, #bodyEmail{background-color:#e5e5e5; padding-top:15px;}
-            #header {background-color: #fff; padding:10px;}
-            .headerContainer {padding:10px;}
-			
+            #intro, .col1, .col2, .col3, .footerContent, .callToActionButtonContent{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color:#979797;line-height:125%;}
+            .footerContent{font-size:12px;}
+            .col1, .col2, .col3{padding-left:10px;padding-right:10px;}
+            
+            body, #bodyEmail{background-color:#e5e5e5;padding-top:15px;}
+            #header{background-color:#fff;padding:10px;}
+            .headerContainer{padding:10px;}
+            
             #hero{background-color:#6ecde2;}
-            .heroContainer {padding:15px;}
+            .heroContainer{padding:15px;}
             
             #intro{background-color:#c8f2fc;}
             .introContainer{padding:15px;}
-
+            
             #columns{background-color:#fff;}
             .columnContent{padding:15px;}
-            .columnImage{text-align:center; padding:10px; 0px;}
-
-            #callToActionContainer{background-color:#ffde93;}
-            .callToActionButton{background-color:#f26a21; border-radius:10px;}
-			.callToActionButtonContent{min-width:200px; padding-top:15px; padding-bottom:15px;}
-            .callToActionButtonContent, .callToActionButtonContent a{color:#fff; display:block; font-size:24px; line-height:100%; text-align:center; text-decoration:none;}
+            .columnImage{text-align:center;padding:10px;0px;}
             
-			#footer{background-color:#fff;}
+            #callToActionContainer{background-color:#ffde93;}
+            .callToActionButton{background-color:#f26a21;border-radius:10px;}
+            .callToActionButtonContent{min-width:200px;padding-top:15px;padding-bottom:15px;}
+            .callToActionButtonContent, .callToActionButtonContent a{color:#fff;display:block;font-size:24px;line-height:100%;text-align:center;text-decoration:none;}
+            
+            #footer{background-color:#fff;}
             
             /* Mobile Syles */
-            @media only screen and (max-width: 480px){
-				
-                body{width:100% !important; min-width:100% !important;}
-                /* Force iOS Mail to render the email at full width. */
-				
-				table[id="header"], table[id="hero"], table[id="intro"], table[id="columns"], table[id="callToActionContainer"], table[id="footer"]
-                {max-width:480px !important; width:100% !important;}
-                
+            @media only screen and (max-width:480px){
+            
+                body{width:100% !important;min-width:100% !important;}
+
+                table[id="header"], table[id="hero"], table[id="intro"], table[id="columns"], table[id="callToActionContainer"], table[id="footer"]
+                {max-width:480px !important;width:100% !important;}
+
                 td[class="columnContent"], table[class="col1"], table[class="col2"], table[class="col3"]
-                {max-width:480px !important; width:100% !important;}
-								
-                .heroImage {height:auto !important;
-            max-width:500px !important;
-            width: 100% !important;}
-				
-				table[class="callToActionButton"]{width:100% !important; text-align:center !important;}
-			}
+                {max-width:480px !important;width:100% !important;}
+
+                .heroImage{height:auto !important;
+                max-width:500px !important;width:100% !important;}
+
+                table[class="callToActionButton"]{width:100% !important;text-align:center !important;}
+            }
         </style>
     </head>
 <body>
@@ -74,17 +72,17 @@
         <!-- Begin Email -->
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyEmail">
 
-        <!-- Email Header -->
+            <!-- Email Header -->
             <table border="0" cellpadding="0" cellspacing="0" width="580" id="header">
-               <tr>
+                <tr>
                     <td align="left" valign="top" class="headerContainer">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                                 <td align="left" valign="top">
-                                    <img src="images/logo.png" id="logo"/>
+                                    <img src="images/logo.png" id="logo" />
                                 </td>
                                 <td width="40" align="right" valign="middle">
-                                        <a href="https://www.linkedin.com/in/akuczynski3" target="_blank">
+                                    <a href="https://www.linkedin.com/in/akuczynski3" target="_blank">
                                     <img src="images/linkedin.png" width="30" height="30">
                                 </td>
                                 <td width="40" align="right" valign="middle">
@@ -189,28 +187,28 @@
                                         <tr>
                                             <td align="center" valign="top" class="callToActionButtonContent">
                                                 <a href="http://www.adriannekuczynski.me/icancode/" target="_blank" title="iCanCode Landing Page">Register Now</a>
-                                            </td>
-                                        </tr>
-                                    </table>
                                 </td>
                             </tr>
                         </table>
-                     </td> 
+                    </td>
                 </tr>
             </table>
+            </td>
+            </tr>
+        </table>
         <!-- End Call To Action Container -->
-           
+
         <!-- Begin Footer -->
-                <table border="0" cellpadding="10" cellspacing="0" width="580" id="footer">
-                    <tr>
-                        <td align="center" valign="top">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td align="left" valign="middle" class="footerContent">
-                                        &copy; 2015 Company Name
-                                    </td>
-                                    <td width="35" align="right" valign="middle">
-                                            <a href="https://www.linkedin.com/in/akuczynski3" target="_blank">
+        <table border="0" cellpadding="10" cellspacing="0" width="580" id="footer">
+            <tr>
+                <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left" valign="middle" class="footerContent">
+                                &copy; 2015 Company Name
+                            </td>
+                            <td width="35" align="right" valign="middle">
+                                <a href="https://www.linkedin.com/in/akuczynski3" target="_blank">
                                         <img src="images/linkedin.png" width="25" height="25">
                                     </td>
                                     <td width="35" align="right" valign="middle">
